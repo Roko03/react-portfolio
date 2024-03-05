@@ -1,0 +1,29 @@
+@import "../../styles/main.scss";
+
+.detail_box {
+  background-color: $blue-box;
+  padding: rem(35) rem(20);
+  border: 1px solid $blue-text;
+  border-radius: rem(10);
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: rem(6);
+
+    h1 {
+      position: relative;
+      color: $blue-text;
+      font-size: rem(23);
+      font-weight: 700;
+    }
+
+    &__line {
+      background-color: $blue-text;
+      height: rem(1);
+      width: 100%;
+    }
+  }
+}
