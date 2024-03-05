@@ -1,0 +1,41 @@
+@import "../../styles/main.scss";
+
+.progress_bar_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: rem(16);
+  h1 {
+    font-weight: 600;
+    color: $yellow-text;
+  }
+
+  .progress_bar {
+    align-self: baseline;
+    width: 100%;
+    height: rem(36);
+    position: relative;
+    border-radius: rem(16);
+    overflow: hidden;
+    background-color: $yellow-text;
+
+    &__line {
+      position: absolute;
+      height: 100%;
+      inset: 0;
+      background-color: $yellow;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: center;
+      padding-right: rem(8);
+      border-radius: rem(16);
+
+      p {
+        color: $black;
+      }
+    }
+  }
+}
